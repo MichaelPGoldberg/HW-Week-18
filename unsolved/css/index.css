@@ -1,0 +1,34 @@
+nav {
+  height: 50px;
+  background-color: lightgrey;
+}
+
+.flexContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.workGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.artsoflife{
+  width: 50%;
+  margin: 50px;
+  padding: 10px;
+}
+
+.departmentofed{
+  width: 50%;
+  margin: 50px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600){
+  .flexContainer{
+    display: column;
+  }
+}
